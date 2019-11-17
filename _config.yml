@@ -10,20 +10,19 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme             : "mmistakes/minimal-mistakes@4.17.2"
+minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Akhila Yaragoppa"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : # This appears below the title
+name                     : "Akhila Yaragoppa"
+description              : "Data Science Portfolio"
+url                      : "https://akhilayaragoppa.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "akhilayaragoppa/akhilayaragoppa.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -65,7 +64,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : "true" # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -107,11 +106,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Akhila Yaragoppa"
+  avatar           : "/images/bio-photo.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Data Science Portfolio"
+  location         : "India"
+  email            : "akhila171@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -142,7 +141,7 @@ footer:
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "akhilayaragoppa"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -292,3 +291,9 @@ defaults:
       comments: # true
       share: true
       related: true
+
+#Comments
+comments:
+	provider: "facebook"
+	num_posts: 5
+	colorscheme: "light"
