@@ -294,15 +294,10 @@ defaults:
 
   # _pages
   - scope:
-		path: ""
-		type: pages
+	  path: ""
+	  type: pages
 	values:
-		layout: single
-		author_profile: true
-		read_time: true
+	  layout: single
+	  author_profile: true
+	  read_time: true
 
-#Comments
-comments:
-	provider: "facebook"
-	num_posts: 5
-	colorscheme: "light"
