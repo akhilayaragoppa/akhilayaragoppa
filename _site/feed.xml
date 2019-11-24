@@ -1,1 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-24T14:12:41+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>An amazing website.</subtitle><author><name>Akhila Yaragoppa</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-24T14:21:08+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>An amazing website.</subtitle><author><name>Akhila Yaragoppa</name></author><entry><title type="html">Classification of Songs - A Machine Learning Project</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - A Machine Learning Project" /><published>2019-11-19T00:00:00+05:30</published><updated>2019-11-19T00:00:00+05:30</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;p&gt;#Dataset&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Million Song Dataset&lt;/strong&gt; is a freely-available collection of audio features and metadata for a million contemporary popular music tracks. This project uses a &lt;a href=&quot;http://millionsongdataset.com/pages/getting-dataset/#subset&quot;&gt;subset&lt;/a&gt; of this dataset. The data contains 515,345 songs, each described by 90 features, and the year in which the song was released. The years range from 1922 to 2011.&lt;/p&gt;
+
+&lt;p&gt;#Exploratory Data Analysis&lt;/p&gt;
+
+&lt;p&gt;For simplicity, the number of classes is reduced from 90 to 9 by assigning a decade to each song, instead of year.&lt;/p&gt;
+
+&lt;p&gt;A histogram of the count of songs in each decade showed an unevenly distributed data:
+&lt;a href=&quot;/images/hist-unmodified.png&quot;&gt;hist-unmodified&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changing the width of the classes resulted in a more evenly distributed graph as shown: (explain why you needed evenly distributed data)
+&lt;a href=&quot;/images/hist-modified.png&quot;&gt;hist-modified&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;#Choosing Features
+A feature can be chosen for classification, if it peaks at different places for different classes. For example, I chose ‘Timbre average 1’ as one of the classifiers as it peaked at various regions for Class 1 and Class 2 as shown in the below figure:
+&lt;a href=&quot;/images/hist-f1-c1-c2.png&quot;&gt;hist-f1-c1-c2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;##Principal Components
+A scatter plot of the first two principal components looked something like this:
+&lt;a href=&quot;/images/scatter-pc.png&quot;&gt;scatter-pc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Two important observations can be made from this plot:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;There is a significant difference in the amount of data between the first few classes and the last couple of classes (it is obscured by pink).&lt;/li&gt;
+  &lt;li&gt;The colors are all bundled together. Ideally, the different colors must be local to different regions on the plot, so that a more accurate decision can be made when predicting the class of some unknown data.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#Bayes’ CLassification
+The test data was first classified without reducing any dimensions (i.e., using all 90 features independently). An accuracy of 22% was obtained.&lt;/p&gt;
+
+&lt;p&gt;The 90 features were then projected in the direction of the 2 eigenvectors corresponding to the 2 highest eigenvalues. Classifying with the help of the 2 principal components returned an accuracy of around 50%. As this result seemed odd, the procedure was rechecked.
+This lead to a conclusion that the dataset has the &lt;strong&gt;curse of dimesionality&lt;/strong&gt;. The problem is that when the dimensionality increases, the volume of the space increases so fast that the available data becomes sparse. So, a huge amount of data is required to support analysis in higher dimensions.&lt;/p&gt;
+
+&lt;p&gt;After modyfying class sizes to obtain a more evenly distributed data, the prediction accuracy was in fact lower (only about 35%). I do not have a plausible explanation for this. The decision boundary looks as below:
+&lt;a href=&quot;/images/dec-bound.png&quot;&gt;decision-boundary&lt;/a&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name></author><summary type="html">#Dataset</summary></entry></feed>
