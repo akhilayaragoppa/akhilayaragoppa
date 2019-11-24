@@ -1,8 +1,10 @@
 ---
 layout: "archive"
-permalink: "/machine-learning/"
-title: "Machine Learning Posts by Tags"
+permalink: "/data-science/"
+title: "Data Analysis Posts by Tags"
 author_profile: true
+header:
+  image: "images/ds.jpg"
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
