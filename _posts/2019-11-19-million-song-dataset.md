@@ -1,9 +1,10 @@
 ---
 title: "Classification of Songs - A Machine Learning Project"
 date: 2019-11-19
+tags: [machine learning, data science, bayes classification]
 header:
   image: "/images/header-msd.png"
-  excerpt: "Machine Learning, Classification, Regression, Data Science"
+  excerpt: "Machine Learning, Classification, Data Science"
 ---
 
 #Dataset
