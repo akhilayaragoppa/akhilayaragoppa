@@ -2,16 +2,15 @@
 title: "About"
 permalink: /about/
 header:
-    image: "images/pencils.jpg"
+    image: "images/main.jpg"
 ---
 
 ## Education
 Graduated from [National Institute of Technology Karnataka](https://www.nitk.ac.in/) with a Bachelors in Electronics and Communications Engineering
 
 ## Occupation
-* Software developer by day.
-* Data visualization enthusiast.
-* Voracious consumer of knowledge.
+* Software developer.
+* Data science enthusiast.
 
 ## Short-term aspirations
 * Data Scientist

@@ -1,6 +1,6 @@
 ---
 title: "Classification of Songs - Million Song Dataset"
-date: 2019-11-19
+date: 2015-09-15
 tags: [Machine Learning, Bayesian Classification]
 header:
   image: "../images/songs.jpg"

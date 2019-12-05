@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-24T19:52:59+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>An amazing website.</subtitle><author><name>Akhila Yaragoppa</name></author><entry><title type="html">Classification of Songs - Million Song Dataset</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - Million Song Dataset" /><published>2019-11-19T00:00:00+05:30</published><updated>2019-11-19T00:00:00+05:30</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;h2 id=&quot;dataset&quot;&gt;Dataset&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-05T12:02:47-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>Data analysis portfolio</subtitle><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><entry><title type="html">An Analysis of Course Feedback Forms</title><link href="http://localhost:4000/feedback-forms/" rel="alternate" type="text/html" title="An Analysis of Course Feedback Forms" /><published>2015-11-30T00:00:00-06:00</published><updated>2015-11-30T00:00:00-06:00</updated><id>http://localhost:4000/feedback-forms</id><content type="html" xml:base="http://localhost:4000/feedback-forms/">&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;The data is a collection of course feedback forms from a group of 5820 students, along with the attendance, number of repeats, and the difficulty level of the course for which the feedback has been submitted.&lt;/p&gt;
+
+&lt;p&gt;The data has four sets of classes that it can be classified into –&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instructor (1, 2, 3)&lt;/li&gt;
+  &lt;li&gt;No. of repeats (1, 2, 3)&lt;/li&gt;
+  &lt;li&gt;Attendance (0, 1, 2, 3, 4)&lt;/li&gt;
+  &lt;li&gt;Difficulty (1, 2, 3, 4, 5)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are 28 features in all, each one being a rating on a scale of 1 to 5 of some aspect of the course or the instructor.&lt;/p&gt;
+
+&lt;p&gt;I tried feeding the features into a neural network, and based on the feedback of a random student I tried to predict –&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the no. of repeats&lt;/li&gt;
+  &lt;li&gt;the attendance of a student&lt;/li&gt;
+  &lt;li&gt;the instructor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;neural-network&quot;&gt;Neural network&lt;/h2&gt;
+
+&lt;p&gt;I used a two-layer feed-forward network, with sigmoid hidden and softmax output neurons. This can classify vectors arbitrarily well, given that there are enough neurons in its hidden layer.&lt;/p&gt;
+
+&lt;h2 id=&quot;predicting-the-number-of-repeats&quot;&gt;Predicting the number of repeats&lt;/h2&gt;
+&lt;p&gt;I first trained the network to predict the no. of repeats. I got a very high accuracy of ~80%. On closer observation, I found that due to the highly biased distribution of the data points in one class (0 repeats), the network predicted almost every point as belonging to that class.
+&lt;img src=&quot;/images/feedback/bar-1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/feedback/mat-1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;predicting-the-attendance&quot;&gt;Predicting the attendance&lt;/h2&gt;
+&lt;p&gt;I then tried to train the network to predict the attendance. The attendance histogram had a better distribution than the previous case. But, I only managed to get an accuracy of about 37% with the validation data. This probably happened because the number of possible classes increased to 5.
+&lt;img src=&quot;/images/feedback/bar-2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/feedback/mat-2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;predicting-the-instructor&quot;&gt;Predicting the instructor&lt;/h2&gt;
+&lt;p&gt;Finally, I trained the network to predict the instructor for a given set of feedback values. There were only 3 instructors, and the distribution looked like this.
+&lt;img src=&quot;/images/feedback/bar-3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/feedback/mat-3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;varying-the-number-of-neurons-to-increase-prediction-accuracy&quot;&gt;Varying the number of neurons to increase prediction accuracy&lt;/h3&gt;
+&lt;p&gt;With 10 neurons in the hidden layer, I obtained an accuracy of 59% for the validation data. Similarly, for 5 and 20 neurons in the hidden layer, I got accuracies of 62.4% and 62.8% respectively.&lt;/p&gt;
+
+&lt;h3 id=&quot;varying-the-number-of-iterations-for-better-performance&quot;&gt;Varying the number of iterations for better performance&lt;/h3&gt;
+&lt;p&gt;At the 37th iteration, I obtained the best validation performance.
+&lt;img src=&quot;/images/feedback/validation.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Machine Learning" /><category term="Neural Networks" /><summary type="html">Data</summary></entry><entry><title type="html">Classification of Songs - Million Song Dataset</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - Million Song Dataset" /><published>2015-09-15T00:00:00-05:00</published><updated>2015-09-15T00:00:00-05:00</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;h2 id=&quot;dataset&quot;&gt;Dataset&lt;/h2&gt;
 
 &lt;p&gt;The &lt;strong&gt;Million Song Dataset&lt;/strong&gt; is a freely-available collection of audio features and metadata for a million contemporary popular music tracks. This project uses a &lt;a href=&quot;http://millionsongdataset.com/pages/getting-dataset/#subset&quot;&gt;subset&lt;/a&gt; of this dataset. The data contains 515,345 songs, each described by 90 features, and the year in which the song was released. The years range from 1922 to 2011.&lt;/p&gt;
 
@@ -79,4 +128,4 @@ This lead to a conclusion that the dataset has the &lt;strong&gt;curse of dimesi
 &lt;span class=&quot;n&quot;&gt;test_op1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lowrep_testingData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_op1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_class_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;acuracy1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Akhila Yaragoppa</name></author><category term="Machine Learning" /><category term="Bayesian Classification" /><summary type="html">Dataset</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Machine Learning" /><category term="Bayesian Classification" /><summary type="html">Dataset</summary></entry></feed>
