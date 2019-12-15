@@ -22,8 +22,7 @@ Graduated from [National Institute of Technology Karnataka](https://www.nitk.ac.
 
 ## Current Favourites
 * Operating System: Ubuntu
-* Language: R
-* Library: ggplot2
+* Language: Python
 * Books:
   - [The Secret](https://en.wikipedia.org/wiki/The_Secret_(book))
   - [Make it Stick](https://www.amazon.com/Make-Stick-Peter-C-Brown-ebook/dp/B00JQ3FN7M)

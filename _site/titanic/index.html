@@ -1,0 +1,601 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Titanic - An exploratory analysis - Akhila Yaragoppa</title>
+<meta name="description" content="This is an exploratory analysis of the Titanic survivors data from Kaggle.">
+
+
+  <meta name="author" content="Akhila Yaragoppa">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Akhila Yaragoppa">
+<meta property="og:title" content="Titanic - An exploratory analysis">
+<meta property="og:url" content="http://localhost:4000/titanic/">
+
+
+  <meta property="og:description" content="This is an exploratory analysis of the Titanic survivors data from Kaggle.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/images/titanic/titanic.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-12-15T00:00:00-06:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/titanic/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Akhila Yaragoppa",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Akhila Yaragoppa Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Akhila Yaragoppa
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/data-science/" >Data Science</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/images/titanic/titanic.jpg" alt="Titanic - An exploratory analysis" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/images/bio-photo.jpg" alt="Akhila Yaragoppa" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Akhila Yaragoppa</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I am an autodidact, striving to be a polymath.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Karnataka, India</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:akhila171@gmail.com">
+            <meta itemprop="email" content="akhila171@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Titanic - An exploratory analysis">
+    <meta itemprop="description" content="This is an exploratory analysis of the Titanic survivors data from Kaggle.">
+    <meta itemprop="datePublished" content="December 15, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Titanic - An exploratory analysis
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This is an exploratory analysis of the Titanic survivors data from Kaggle.</p>
+
+<p>On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.</p>
+
+<p>While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.</p>
+
+<p>In this article, I will attempt to identify what category of passengers most likely survived.</p>
+
+<p>The features that can be examined for each passenger are:</p>
+<ol>
+  <li>Age</li>
+  <li>Sex</li>
+  <li>Ticket class</li>
+  <li>Number of siblings / spouses aboard the Titanic</li>
+  <li>Number of parents / children aboard the Titanic</li>
+  <li>Passenger fare</li>
+  <li>Port of Embarkation</li>
+</ol>
+
+<h2 id="age">Age</h2>
+<p>Let’s first have a look at the number of survivors and non-survivors among passengers of different ages.
+<img src="/images/titanic/age.png" alt="" /></p>
+
+<p>The following observations can be made from the graph above:</p>
+<ul>
+  <li>Most passengers on the ship are in the age range 15 to 50.</li>
+  <li>A high number of non-survivors exist in the age range 20-30.</li>
+  <li>There are also a good number of survivors in the same age range.</li>
+  <li>Of the 8 passengers above the age of 65, only 1 survived.<br />
+From the above observations, I can assume that ‘age’ can be used as a decision factor for evaluating passenger survival.</li>
+</ul>
+
+<h2 id="sex">Sex</h2>
+<p>Let’s now see if there is a bias in number of survivors with respect to sex of the passenger.
+<img src="/images/titanic/male-female-survivors.png" alt="" /></p>
+
+<p>Observations from this graph:</p>
+<ul>
+  <li>Approximately 70% of the female passengers survived.</li>
+  <li>Only 20% of the male passengers survived.
+Therefore, we can use this feature to significantly improve survival prediction of a passenger.</li>
+</ul>
+
+<h2 id="ticket-class">Ticket Class</h2>
+<p>Next, let’s see how the ticket class affected the survival chances of a passenger:<br />
+<img src="/images/titanic/Pclass.png" alt="" /></p>
+
+<p>Observations from this graph:</p>
+<ul>
+  <li>More than 50% of passengers with Class 1 tickets survived.</li>
+  <li>Around 50% of passengers with Class 2 tickets survived.</li>
+  <li>Only around 30% of passengers with Class 3 tickets survived.
+This tells us that somehow even during a life/death situation like the sinking of the Titanic, people with better tickets had a higher chance of survival.</li>
+</ul>
+
+<h2 id="ticket-fare">Ticket Fare</h2>
+<p>Another graph on similar lines as the ticket class, is the graph of ticket fare.<br />
+<img src="/images/titanic/fare.png" alt="" /><br />
+From the above graph, we can see that only 4 people that did not survive, paid a ticket fare above 100. Also, from the graph of non-survivors, we see that a very high number of non-survivors are concentrated around low ticket prices.<br />
+We see that this graph affects the survival in the same way that the ticket class did. It is possible that most information given by this variable is redundant. If this were a huge dataset with many features, we could possibly ignore this feature, or generate a new feature from the ‘ticket class’ and the ‘ticket fare’.</p>
+
+<h2 id="port-of-embarkation">Port of embarkation</h2>
+
+<h3 id="titanic-sailing-route-map">Titanic sailing route map</h3>
+<p>Titanic first arrived at Southampton, UK.<br />
+6 days later, Titanic arrived at Cherbourg, France.<br />
+Titanic arrived in Queenstown, Ireland a day later.<br />
+3 days later Titanic hits the iceberg.</p>
+
+<p>Let’s look at a graph of the survival variation based on the ‘port of embarkation’.<br />
+<img src="/images/titanic/embarkation.png" alt="" /></p>
+
+<p>Observations:</p>
+<ul>
+  <li>A huge number of people boarded from Southampton. This was probably because it was the first port where people boarded.</li>
+  <li>Only about 30% of the passengers who boarded in Southampton survived.</li>
+  <li>A small number of people boarded in Queenstown, and about 40% of them survived.</li>
+  <li>In Cherbourg, more than 50% of the passengers survived.  This was probably because most passengers who boarded in Cherbourg had class 1 tickets.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>This analysis gives us a fair idea of what factors most determined the survival of a passenger aboard the titanic. These features can be used to build machine learning models to predict the survival of a passenger. A preliminary knowledge of the data sets a much required context to tweak the features as necessary for building efficient machine learning models.</p>
+
+<h2 id="code">Code</h2>
+<p>The above analysis was carried out using a jupyter notebook. The notebook can be found <a href="https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/Titanic-Data-Visualization.ipynb">here</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#data-visualization" class="page__taxonomy-item" rel="tag">Data Visualization</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-12-15T00:00:00-06:00">December 15, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Titanic+-+An+exploratory+analysis%20http%3A%2F%2Flocalhost%3A4000%2Ftitanic%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Ftitanic%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Ftitanic%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/feedback-forms/" class="pagination--pager" title="An Analysis of Course Feedback Forms
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/feedback-forms/" rel="permalink">An Analysis of Course Feedback Forms
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/million-song-dataset/" rel="permalink">Classification of Songs - Million Song Dataset
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An analysis of the properties of a song to identify the decade to which the song belonged.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Akhila Yaragoppa. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
