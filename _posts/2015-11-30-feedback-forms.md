@@ -1,7 +1,7 @@
 ---
 title: "An Analysis of Course Feedback Forms"
 date: 2015-11-30
-tags: [Machine Learning, Neural Networks]
+tags: [Neural Networks]
 header:
   image: "../images/feedback/feedback.jpg"
   excerpt: "Machine Learning, Classification, Data Science"
