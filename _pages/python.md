@@ -12,7 +12,8 @@ I recently started learning python and found it quite interesting and fun to lea
 
 
 # [Matplotlib - basics](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/matplotlib.md)
-Visualizing data using matplotlib pyplot
+Visualizing data using matplotlib pyplot  
+
 
 # [Plagiarism test for 2 documents](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/document-distance.md)
 Finding the degree of dissimilarity between two given documents

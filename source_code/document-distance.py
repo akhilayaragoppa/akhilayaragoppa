@@ -2,7 +2,7 @@
 """
 Created on Mon Dec 23 23:42:32 2019
 
-@author: ay46507
+@author: Akhila Yaragoppa
 """
 
 from math import acos,sqrt

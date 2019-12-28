@@ -1,9 +1,3 @@
----
-title: "Plagiarism test for two documents"
-date: 2019-12-22
-header:
-  image: "../images/docdist.jpg"
----
 
 # Testing for plagiarism by calculating the angle between the two documents
 
