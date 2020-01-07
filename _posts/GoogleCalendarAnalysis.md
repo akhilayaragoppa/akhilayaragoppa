@@ -43,7 +43,7 @@ The csv file is created such that it can directly be imported into pandas as a D
 
 This is what my calendar looked like in the last week.
 
-![calendar](../images/g-calendar.png)
+![](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/images/g-calendar/g-calendar.png)
 
 # Extracted Data (Output)
 
@@ -55,7 +55,7 @@ The extracted data from google calendar has the following columns:
 - Category (Color in calendar)
 
 A sample of the extracted data is shown below:
-![Excel](../images/g-csv.png)
+![](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/images/g-calendar/g-csv.png)
 
 # What to do with the extracted csv
 
