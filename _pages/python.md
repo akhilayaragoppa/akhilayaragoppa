@@ -17,3 +17,7 @@ Visualizing data using matplotlib pyplot
 
 # [Plagiarism test for 2 documents](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/document-distance.md)
 Finding the degree of dissimilarity between two given documents
+
+
+# [Extracting events from Google Calendar](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/GoogleCalendarAnalysis.md)
+Tracking activities using Google Calendar
