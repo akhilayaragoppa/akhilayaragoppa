@@ -1,10 +1,9 @@
 ---
 title: "An Analysis of Course Feedback Forms"
 date: 2015-11-30
-tags: [Neural Networks]
+tags: [Neural Networks, MATLAB]
 header:
-  image: "../images/feedback/feedback.jpg"
-  excerpt: "Machine Learning, Classification, Data Science"
+  image: "/images/ds.jpg"
 ---
 An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.  
 

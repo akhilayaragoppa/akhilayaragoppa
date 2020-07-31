@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-28T13:12:34-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>Data analysis portfolio</subtitle><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><entry><title type="html">Titanic - An exploratory analysis</title><link href="http://localhost:4000/titanic/" rel="alternate" type="text/html" title="Titanic - An exploratory analysis" /><published>2019-12-15T00:00:00-06:00</published><updated>2019-12-15T00:00:00-06:00</updated><id>http://localhost:4000/titanic</id><content type="html" xml:base="http://localhost:4000/titanic/">&lt;p&gt;This is an exploratory analysis of the Titanic survivors data from Kaggle.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-01T01:18:32+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>Data analysis portfolio</subtitle><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><entry><title type="html">Clearing emails from Gmail in bulk</title><link href="http://localhost:4000/apis/deleting-old-emails/" rel="alternate" type="text/html" title="Clearing emails from Gmail in bulk" /><published>2020-07-25T00:00:00+05:30</published><updated>2020-07-25T00:00:00+05:30</updated><id>http://localhost:4000/apis/deleting-old-emails</id><content type="html" xml:base="http://localhost:4000/apis/deleting-old-emails/">&lt;p&gt;A script that uses the Gmail API to delete unwanted emails.&lt;/p&gt;
+
+&lt;h2 id=&quot;backstory&quot;&gt;Backstory&lt;/h2&gt;
+
+&lt;p&gt;I created my Gmail account when I was 14 years old. There were about 17000 unread emails when I last checked. This made it very difficult for me to see how many new emails I had received. And all these old unread emails were simply hogging space on my Gmail account. So, one day I sought to clear all unread emails in my inbox.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenge-with-manual-deletion&quot;&gt;Challenge with manual deletion&lt;/h2&gt;
+
+&lt;p&gt;There is no option in Gmail to delete all emails belonging to a certain category. To delete a 1000 of them manually it took me about 30 minutes. As I had decided I needed to delete these emails, I sat down and wrote a script. Which also took about 30 minutes.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-code-itself&quot;&gt;The code itself&lt;/h2&gt;
+
+&lt;p&gt;Here is the code that did the job :)
+&lt;a href=&quot;/source_code/gmail.py&quot;&gt;Source code&lt;/a&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="APIs" /><summary type="html">A script that uses the Gmail API to delete unwanted emails.</summary></entry><entry><title type="html">Harry Potter’s Invisibility Cloak</title><link href="http://localhost:4000/invisibility-cloak/" rel="alternate" type="text/html" title="Harry Potter's Invisibility Cloak" /><published>2020-07-15T00:00:00+05:30</published><updated>2020-07-15T00:00:00+05:30</updated><id>http://localhost:4000/invisibility-cloak</id><content type="html" xml:base="http://localhost:4000/invisibility-cloak/">&lt;p&gt;Take any blue cloth and be invisible.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-this-project&quot;&gt;Why this project&lt;/h2&gt;
+&lt;p&gt;As a child, I always wanted to have magical powers. I came across someone on my linkedIn that did this project. I had to get myself an invisibility cloak too.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it Works&lt;/h2&gt;
+&lt;h4 id=&quot;finding-hsv-thresholds&quot;&gt;Finding HSV thresholds&lt;/h4&gt;
+&lt;p&gt;I convert the image captured by the webcam to an &lt;a href=&quot;https://en.wikipedia.org/wiki/HSL_and_HSV&quot;&gt;HSV&lt;/a&gt; image. I then set up scrollbars where I can vary the Hue, Saturation and Value to find the thresholds that detect only one color - the color of the cloak.&lt;/p&gt;
+&lt;h4 id=&quot;setting-up-masks&quot;&gt;Setting up masks&lt;/h4&gt;
+&lt;p&gt;I then set up masks that separate out the cloak from the rest of the picture on screen.&lt;/p&gt;
+&lt;h4 id=&quot;the-trick-to-invisibility&quot;&gt;The trick to Invisibility&lt;/h4&gt;
+&lt;p&gt;When webcam first starts, we capture an image of the background where the subject will be standing. When the cloak appears on screen, we superimpose the background image on the webcam display. And Voila!&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Here&lt;/a&gt; is the code I wrote.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="OpenCV" /><summary type="html">Take any blue cloth and be invisible.</summary></entry><entry><title type="html">Virtual Paint</title><link href="http://localhost:4000/virtual-paint/" rel="alternate" type="text/html" title="Virtual Paint" /><published>2020-07-08T00:00:00+05:30</published><updated>2020-07-08T00:00:00+05:30</updated><id>http://localhost:4000/virtual-paint</id><content type="html" xml:base="http://localhost:4000/virtual-paint/">&lt;p&gt;Hover a marker in the air in front of the camera to paint on the screen.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-this-project&quot;&gt;Why this project&lt;/h2&gt;
+&lt;p&gt;Fascinated by the field of computer vision, I sought to learn more about it. I learnt some basics of the library of OpenCV in python. In an effort to apply the skills learnt to a project and learn more along the way, I chose this project.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it Works&lt;/h2&gt;
+&lt;h4 id=&quot;finding-hsv-thresholds&quot;&gt;Finding HSV thresholds&lt;/h4&gt;
+&lt;p&gt;I convert the image captured by the webcam to an &lt;a href=&quot;https://en.wikipedia.org/wiki/HSL_and_HSV&quot;&gt;HSV&lt;/a&gt; image. I then set up scrollbars where I can vary the Hue, Saturation and Value to find the thresholds that detect only one color.&lt;/p&gt;
+&lt;h4 id=&quot;setting-up-masks&quot;&gt;Setting up masks&lt;/h4&gt;
+&lt;p&gt;I then set up masks that separate out each color from the rest of the picture on screen.&lt;/p&gt;
+&lt;h4 id=&quot;painting-in-the-air&quot;&gt;Painting in the air&lt;/h4&gt;
+&lt;p&gt;As I move a colored marker, I draw on the image with the same color as the marker. This created the effect of a virtual marker.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Here&lt;/a&gt; is the code I wrote.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="OpenCV" /><summary type="html">Hover a marker in the air in front of the camera to paint on the screen.</summary></entry><entry><title type="html">Extracting events from Google Calendar for Data Analysis</title><link href="http://localhost:4000/apis/GoogleCalendarAnalysis/" rel="alternate" type="text/html" title="Extracting events from Google Calendar for Data Analysis" /><published>2020-01-07T00:00:00+05:30</published><updated>2020-01-07T00:00:00+05:30</updated><id>http://localhost:4000/apis/GoogleCalendarAnalysis</id><content type="html" xml:base="http://localhost:4000/apis/GoogleCalendarAnalysis/">&lt;p&gt;An effort to maximize productivity and track the progress.&lt;/p&gt;
+
+&lt;p&gt;I wrote a python script to extract events from my google calendar using the
+Google Calendar API.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Inputs: Start date, number of days (n)&lt;/li&gt;
+  &lt;li&gt;Output: A csv file with events for n days and related information.
+This can be directly imported as a DataFrame using pandas, for
+further analysis and visualization.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
+
+&lt;p&gt;I am always looking for ways to maximise my productivity. The goal is to
+get done as much as I want to, while being careful not to reach the point of burnout.&lt;/p&gt;
+
+&lt;p&gt;I recently came across this idea of scheduling every minute of your day using a
+calendar. This method worked surprisingly well and helped me very easily achieve
+my daily goals. I have been using the google calendar to track my daily activities.
+It occurred to me that I could track and monitor my progress by visualizing how I
+spent the last few days/weeks.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-the-code-does&quot;&gt;What the code does&lt;/h1&gt;
+
+&lt;h2 id=&quot;querying-data-from-calendar-api&quot;&gt;Querying data from Calendar API&lt;/h2&gt;
+&lt;p&gt;Each task I schedule in my day is an event. I first extract the event resources
+by calling the google calendar APIs. Some useful information on how various items
+in the calendar are stored, is provided in the &lt;a href=&quot;https://developers.google.com/calendar/concepts&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ordering-and-segregating-data&quot;&gt;Ordering and segregating data&lt;/h2&gt;
+&lt;p&gt;I segregate the events belonging to each day from the start date (configurable).
+For each event I obtain:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Name of the event.&lt;/li&gt;
+  &lt;li&gt;The category of the event. Each category has a different color assigned to it.&lt;/li&gt;
+  &lt;li&gt;The date and time of start of the event.&lt;/li&gt;
+  &lt;li&gt;The duration of the event.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;saving-data-into-a-csv&quot;&gt;Saving data into a csv&lt;/h2&gt;
+&lt;p&gt;I create tables with all the above mentioned data. I save these into a csv file.
+The csv file is created such that it can directly be imported into pandas as a DataFrame for further analysis.&lt;/p&gt;
+
+&lt;h1 id=&quot;calendar-input&quot;&gt;Calendar (Input)&lt;/h1&gt;
+
+&lt;p&gt;This is what my calendar looked like in the first week.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/g-calendar/g-calendar.png&quot; alt=&quot;Calendar image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;extracted-data-output&quot;&gt;Extracted Data (Output)&lt;/h1&gt;
+
+&lt;p&gt;The extracted data from google calendar has the following columns:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Day&lt;/li&gt;
+  &lt;li&gt;Event name&lt;/li&gt;
+  &lt;li&gt;Start datetime&lt;/li&gt;
+  &lt;li&gt;Event duration&lt;/li&gt;
+  &lt;li&gt;Category (Color in calendar)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A sample of the extracted data is shown below:
+&lt;img src=&quot;/images/g-calendar/g-csv.png&quot; alt=&quot;csv image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;what-to-do-with-the-extracted-csv&quot;&gt;What to do with the extracted csv&lt;/h1&gt;
+
+&lt;p&gt;After importing the csv into a data frame, I can plot various graphs (histograms, pie charts, etc.)
+indicating the amount of time spent in various activites and monitor how I utilize my time.&lt;/p&gt;
+
+&lt;p&gt;I shall be putting up another post with the complete analysis of this data. I will
+probably implement some ideas from habit tracking apps to extract useful
+information and implications of this data.&lt;/p&gt;
+
+&lt;h1 id=&quot;source-code&quot;&gt;Source Code&lt;/h1&gt;
+
+&lt;p&gt;The source code for this project is in python. Source code can be found &lt;!---&lt;a href=&quot;/source_code/google-calendar.py&quot;&gt;here&lt;/a&gt;--&gt;
+&lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/google-calendar.py&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="APIs" /><summary type="html">An effort to maximize productivity and track the progress.</summary></entry><entry><title type="html">Titanic - An exploratory analysis</title><link href="http://localhost:4000/titanic/" rel="alternate" type="text/html" title="Titanic - An exploratory analysis" /><published>2019-12-15T00:00:00+05:30</published><updated>2019-12-15T00:00:00+05:30</updated><id>http://localhost:4000/titanic</id><content type="html" xml:base="http://localhost:4000/titanic/">&lt;p&gt;This is an exploratory analysis of the Titanic survivors data from Kaggle.&lt;/p&gt;
 
 &lt;p&gt;On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.&lt;/p&gt;
 
@@ -82,7 +200,42 @@ Titanic arrived in Queenstown, Ireland a day later.&lt;br /&gt;
 &lt;p&gt;This analysis gives us a fair idea of what factors most determined the survival of a passenger aboard the titanic. These features can be used to build machine learning models to predict the survival of a passenger. A preliminary knowledge of the data sets a much required context to tweak the features as necessary for building efficient machine learning models.&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;p&gt;The above analysis was carried out using a jupyter notebook. The notebook can be found &lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/Titanic-Data-Visualization.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Data Visualization" /><summary type="html">This is an exploratory analysis of the Titanic survivors data from Kaggle.</summary></entry><entry><title type="html">An Analysis of Course Feedback Forms</title><link href="http://localhost:4000/feedback-forms/" rel="alternate" type="text/html" title="An Analysis of Course Feedback Forms" /><published>2015-11-30T00:00:00-06:00</published><updated>2015-11-30T00:00:00-06:00</updated><id>http://localhost:4000/feedback-forms</id><content type="html" xml:base="http://localhost:4000/feedback-forms/">&lt;p&gt;An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.&lt;/p&gt;
+&lt;p&gt;The above analysis was carried out using a jupyter notebook. The notebook can be found &lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/Titanic-Data-Visualization.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Data Visualization" /><summary type="html">This is an exploratory analysis of the Titanic survivors data from Kaggle.</summary></entry><entry><title type="html">Cosine distance between two documents</title><link href="http://localhost:4000/algorithms/document-distance/" rel="alternate" type="text/html" title="Cosine distance between two documents" /><published>2019-12-10T00:00:00+05:30</published><updated>2019-12-10T00:00:00+05:30</updated><id>http://localhost:4000/algorithms/document-distance</id><content type="html" xml:base="http://localhost:4000/algorithms/document-distance/">&lt;p&gt;A tiny python script that calculates the cosine distance between any two documents.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-cosine-distance&quot;&gt;What is cosine distance?&lt;/h2&gt;
+
+&lt;p&gt;In simple terms, cosine distance gives an idea of the degree of dissimilarity between two sets of text documents. We do this by calculating the angle between them. Angle between two vectors is the angle formed by the word vectors in the two documents. A detailed explanation of the algorithm should make this clear.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-can-we-see-this-being-used&quot;&gt;Where can we see this being used?&lt;/h2&gt;
+
+&lt;p&gt;There are several applications of cosine distance algorithm.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Implementing a search engine&lt;/li&gt;
+  &lt;li&gt;Testing for plagiarism&lt;/li&gt;
+  &lt;li&gt;Natural Language Processing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h2&gt;
+
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Parse the given document to find all the words present in the document&lt;/li&gt;
+  &lt;li&gt;Calculate frequencies of each word. Consider this a multi-dimensional vector (the number of dimensions of the vector being the number of unique words in the document)&lt;/li&gt;
+  &lt;li&gt;Calculate the angle between these two vectors&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;inputs&quot;&gt;Inputs&lt;/h2&gt;
+
+&lt;p&gt;The code takes two file names as input, between which you intend to calculate the angle.&lt;/p&gt;
+
+&lt;h2 id=&quot;output&quot;&gt;Output&lt;/h2&gt;
+
+&lt;p&gt;The final output is the angle (in radians) between the two documents.&lt;/p&gt;
+
+&lt;h2 id=&quot;source-code&quot;&gt;Source code&lt;/h2&gt;
+
+&lt;p&gt;The source code with the entire implementation can be found &lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/document-distance.py&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Algorithms" /><summary type="html">A tiny python script that calculates the cosine distance between any two documents.</summary></entry><entry><title type="html">An Analysis of Course Feedback Forms</title><link href="http://localhost:4000/feedback-forms/" rel="alternate" type="text/html" title="An Analysis of Course Feedback Forms" /><published>2015-11-30T00:00:00+05:30</published><updated>2015-11-30T00:00:00+05:30</updated><id>http://localhost:4000/feedback-forms</id><content type="html" xml:base="http://localhost:4000/feedback-forms/">&lt;p&gt;An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.&lt;/p&gt;
 
 &lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
 
@@ -134,7 +287,7 @@ Titanic arrived in Queenstown, Ireland a day later.&lt;br /&gt;
 &lt;h3 id=&quot;varying-the-number-of-iterations-for-better-performance&quot;&gt;Varying the number of iterations for better performance&lt;/h3&gt;
 &lt;p&gt;At the 37th iteration, I obtained the best validation performance.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/feedback/validation.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Neural Networks" /><summary type="html">An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.</summary></entry><entry><title type="html">Classification of Songs - Million Song Dataset</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - Million Song Dataset" /><published>2015-09-15T00:00:00-05:00</published><updated>2015-09-15T00:00:00-05:00</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;p&gt;An analysis of the properties of a song to identify the decade to which the song belonged.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/feedback/validation.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Neural Networks" /><category term="MATLAB" /><summary type="html">An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.</summary></entry><entry><title type="html">Classification of Songs - Million Song Dataset</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - Million Song Dataset" /><published>2015-09-15T00:00:00+05:30</published><updated>2015-09-15T00:00:00+05:30</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;p&gt;An analysis of the properties of a song to identify the decade to which the song belonged.&lt;/p&gt;
 
 &lt;h2 id=&quot;dataset&quot;&gt;Dataset&lt;/h2&gt;
 
@@ -217,4 +370,4 @@ This lead to a conclusion that the dataset has the &lt;strong&gt;curse of dimesi
 &lt;span class=&quot;n&quot;&gt;test_op1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lowrep_testingData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_op1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_class_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;acuracy1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Bayesian Classification" /><summary type="html">An analysis of the properties of a song to identify the decade to which the song belonged.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Classification" /><category term="MATLAB" /><summary type="html">An analysis of the properties of a song to identify the decade to which the song belonged.</summary></entry></feed>

@@ -1,23 +1,11 @@
 ---
-layout: "archive"
-permalink: "/python/"
-title: "Python Posts"
+layout: categories
+title: Python
+permalink: /python/
 author_profile: true
 header:
-  image: "images/python.jpg"
+  image: "images/abs.jpg"
 ---
 
-I recently started learning python and found it quite interesting and fun to learn. I decided to document and track my progress by uploading some of the projects that I implement during my learning process.  
-
-
-
-# [Matplotlib - basics](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/matplotlib.md)
-Visualizing data using matplotlib pyplot  
-
-
-# [Plagiarism test for 2 documents](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/document-distance.md)
-Finding the degree of dissimilarity between two given documents
-
-
-# [Extracting events from Google Calendar](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/_posts/GoogleCalendarAnalysis.md)
-Tracking activities using Google Calendar
+A selection of some of the python scripts I wrote in an effort to learn python and build an appreciation for the ease of automation with python.
+<br> <br>

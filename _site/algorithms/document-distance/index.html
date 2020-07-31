@@ -9,25 +9,31 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Akhila Yaragoppa</title>
-<meta name="description" content="Data analysis portfolio">
+<!-- begin _includes/seo.html --><title>Cosine distance between two documents - Akhila Yaragoppa</title>
+<meta name="description" content="A tiny python script that calculates the cosine distance between any two documents.">
 
 
   <meta name="author" content="Akhila Yaragoppa">
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Akhila Yaragoppa">
-<meta property="og:title" content="Akhila Yaragoppa">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="Cosine distance between two documents">
+<meta property="og:url" content="http://localhost:4000/algorithms/document-distance/">
+
+
+  <meta property="og:description" content="A tiny python script that calculates the cosine distance between any two documents.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/images/abs.jpg">
 
 
 
 
 
-
-
+  <meta property="article:published_time" content="2019-12-10T00:00:00+05:30">
 
 
 
@@ -38,11 +44,9 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/algorithms/document-distance/">
 
 
-
-  <link rel="next" href="http://localhost:4000/page2/">
 
 
 <script type="application/ld+json">
@@ -101,7 +105,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -147,6 +151,28 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/images/abs.jpg" alt="Cosine distance between two documents" class="page__hero-image">
+  
+  
+</div>
+
+
 
 
 
@@ -275,20 +301,142 @@
   </div>
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Cosine distance between two documents">
+    <meta itemprop="description" content="A tiny python script that calculates the cosine distance between any two documents.">
+    <meta itemprop="datePublished" content="December 10, 2019">
     
 
-<h3 class="archive__subtitle">Recent posts</h3>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Cosine distance between two documents
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>A tiny python script that calculates the cosine distance between any two documents.</p>
+
+<h2 id="what-is-cosine-distance">What is cosine distance?</h2>
+
+<p>In simple terms, cosine distance gives an idea of the degree of dissimilarity between two sets of text documents. We do this by calculating the angle between them. Angle between two vectors is the angle formed by the word vectors in the two documents. A detailed explanation of the algorithm should make this clear.</p>
+
+<h2 id="where-can-we-see-this-being-used">Where can we see this being used?</h2>
+
+<p>There are several applications of cosine distance algorithm.</p>
+
+<ul>
+  <li>Implementing a search engine</li>
+  <li>Testing for plagiarism</li>
+  <li>Natural Language Processing</li>
+</ul>
+
+<h2 id="algorithm">Algorithm</h2>
+
+<p>Steps:</p>
+<ol>
+  <li>Parse the given document to find all the words present in the document</li>
+  <li>Calculate frequencies of each word. Consider this a multi-dimensional vector (the number of dimensions of the vector being the number of unique words in the document)</li>
+  <li>Calculate the angle between these two vectors</li>
+</ol>
+
+<h2 id="inputs">Inputs</h2>
+
+<p>The code takes two file names as input, between which you intend to calculate the angle.</p>
+
+<h2 id="output">Output</h2>
+
+<p>The final output is the angle (in radians) between the two documents.</p>
+
+<h2 id="source-code">Source code</h2>
+
+<p>The source code with the entire implementation can be found <a href="https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/document-distance.py">here</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
 
 
   
 
 
+  
+  
+  
 
-<div class="list__item">
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#algorithms" class="page__taxonomy-item" rel="tag">Algorithms</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-12-10T00:00:00+05:30">December 10, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Cosine+distance+between+two+documents%20http%3A%2F%2Flocalhost%3A4000%2Falgorithms%2Fdocument-distance%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Falgorithms%2Fdocument-distance%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Falgorithms%2Fdocument-distance%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/feedback-forms/" class="pagination--pager" title="An Analysis of Course Feedback Forms
+">Previous</a>
+    
+    
+      <a href="/titanic/" class="pagination--pager" title="Titanic - An exploratory analysis
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -313,12 +461,12 @@
   </article>
 </div>
 
+        
+          
 
-  
 
 
-
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -343,12 +491,12 @@
   </article>
 </div>
 
+        
+          
 
-  
 
 
-
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -373,12 +521,12 @@
   </article>
 </div>
 
+        
+          
 
-  
 
 
-
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -403,79 +551,13 @@
   </article>
 </div>
 
-
+        
+      </div>
+    </div>
   
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/titanic/" rel="permalink">Titanic - An exploratory analysis
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  3 minute read
-
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">This is an exploratory analysis of the Titanic survivors data from Kaggle.
-
-</p>
-  </article>
+  
 </div>
 
-
-
-
-<nav class="pagination">
-  
-  <ul>
-    
-    
-    <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
-    
-
-    
-    
-      <li><a href="#" class="disabled current">1</a></li>
-    
-
-    
-    
-
-    
-    
-    
-
-    
-
-    
-    
-
-    
-      <li><a href="/page2/">2</a></li>
-    
-
-    
-    
-      <li><a href="/page2/">Next</a></li>
-    
-  </ul>
-</nav>
-
-
-
-  </div>
-</div>
     </div>
 
     

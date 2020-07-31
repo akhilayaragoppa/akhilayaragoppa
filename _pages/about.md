@@ -6,29 +6,31 @@ header:
 ---
 
 ## Education
-Graduated from [National Institute of Technology Karnataka](https://www.nitk.ac.in/) with a Bachelors in Electronics and Communications Engineering
+* B.Tech from [NIT Surathkal](https://www.nitk.ac.in/) in Electronics and Communication Engineering, 2017
+* [Plaksha Tech Leader](https://plaksha.org/techleaders) Fellow, 2021
 
-## Occupation
-* Software developer.
-* Data science enthusiast.
+## Work Experience
+* Embedded Software Developer, 2017 - 2020
 
-## Short-term aspirations
-* Data Scientist
-* Statistician
+## Interests
+* Computer Vision
+* Natural Language Processing
 
-## Long-term aspirations
-* Inventor
-* Philanthropist
+## Extra Curriculars
+* Vice President and Secretary at Toastmasters Club
+* Judge at Speech Contests
+* Organizing team outings
+* Participation in charity events
 
-## Current Favourites
-* Operating System: Ubuntu
-* Language: Python
-* Books:
-  - [The Secret](https://en.wikipedia.org/wiki/The_Secret_(book))
-  - [Make it Stick](https://www.amazon.com/Make-Stick-Peter-C-Brown-ebook/dp/B00JQ3FN7M)
-  - [How Linux Works: What Every Superuser Should Know](https://www.amazon.com/How-Linux-Works-2nd-Superuser-ebook/dp/B00PKTGLWM/ref=sr_1_2?crid=UCM91YIPE8TQ&keywords=how+linux+works+what+every+superuser+should+know&qid=1574588899&s=digital-text&sprefix=how+linu%2Cdigital-text%2C397&sr=1-2)
-* Youtube: [The David Rubenstine Show](https://www.youtube.com/channel/UCIALMKvObZNtJ6AmdCLP7Lg/search?query=david+rubenstein)
-* Celebrities:
-  - Bill Gates
-  - Elon Musk
-* Website: [GatesNotes](https://www.gatesnotes.com/)
+## Hobbies
+* Badminton
+* Ukulele
+
+## Some Recommendations
+* [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+    - Making complex mathematics fun and interesting
+* [Linear Digressions](http://lineardigressions.com/)
+    - My favourite podcast on Data Science
+* [Trevor Noah](https://www.youtube.com/user/trevornoah)
+    - An amazing comedian with an exceptional view on racism.
+    - Also checkout [The Daily Show with Trevor Noah](https://www.youtube.com/channel/UCwWhs_6x42TyRM4Wstoq8HA)

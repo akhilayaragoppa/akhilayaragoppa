@@ -1,9 +1,10 @@
 ---
 title: "Classification of Songs - Million Song Dataset"
 date: 2015-09-15
-tags: [Bayesian Classification]
+tags: [Classification, MATLAB]
+#category: "Bayesian Classification"
 header:
-  image: "../images/songs.jpg"
+  image: "/images/songs.jpg"
   excerpt: "Machine Learning, Classification, Data Science"
 ---
 

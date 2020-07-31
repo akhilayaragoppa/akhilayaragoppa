@@ -20,7 +20,7 @@ title                    : "Akhila Yaragoppa"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Akhila Yaragoppa"
-description              : "Data analysis portfolio"
+description              : "A Data Science Portfolio"
 url                      : https://akhilayaragoppa.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Akhila Yaragoppa"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an autodidact, striving to be a polymath."
+  bio              : "A self-taught Data Scientist"
   location         : "Karnataka, India"
   email            : "akhila171@gmail.com"
   links:
