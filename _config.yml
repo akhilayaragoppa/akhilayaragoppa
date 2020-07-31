@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Akhila Yaragoppa"
-  avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/bio--photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A self-taught Data Scientist"
   location         : "Karnataka, India"
   email            : "akhila171@gmail.com"
@@ -301,4 +301,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true

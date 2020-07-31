@@ -19,4 +19,4 @@ There is no option in Gmail to delete all emails belonging to a certain category
 ## The code itself
 
 Here is the code that did the job :)
-[Source code](/source_code/gmail.py)
+[Source code](https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/gmail.py)
