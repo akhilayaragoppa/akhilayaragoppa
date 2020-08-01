@@ -1,12 +1,12 @@
 var store = [{
         "title": "Classification of Songs - Million Song Dataset",
         "excerpt":"An analysis of the properties of a song to identify the decade to which the song belonged. Dataset The Million Song Dataset is a freely-available collection of audio features and metadata for a million contemporary popular music tracks. This project uses a subset of this dataset. The data contains 515,345...","categories": [],
-        "tags": ["Classification","MATLAB"],
+        "tags": ["Classification"],
         "url": "http://localhost:4000/million-song-dataset/",
         "teaser":null},{
         "title": "An Analysis of Course Feedback Forms",
         "excerpt":"An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course. Data The data is a collection of course feedback forms from a group of 5820 students, along with the attendance, number of repeats, and the difficulty level of the course for...","categories": [],
-        "tags": ["Neural Networks","MATLAB"],
+        "tags": ["Neural Networks"],
         "url": "http://localhost:4000/feedback-forms/",
         "teaser":null},{
         "title": "Cosine distance between two documents",
@@ -23,6 +23,16 @@ var store = [{
         "excerpt":"An effort to maximize productivity and track the progress. I wrote a python script to extract events from my google calendar using the Google Calendar API. Inputs: Start date, number of days (n) Output: A csv file with events for n days and related information. This can be directly imported...","categories": ["APIs"],
         "tags": [],
         "url": "http://localhost:4000/apis/GoogleCalendarAnalysis/",
+        "teaser":null},{
+        "title": "Using TensorFlow to Calculate Decision Boundaries",
+        "excerpt":"Building neural network models using TensorFlow framework to classify objects belonging to different categories.   Code  Data and Code  ","categories": [],
+        "tags": ["Neural Networks","Classification"],
+        "url": "http://localhost:4000/neural-nets-classification/",
+        "teaser":null},{
+        "title": "Sentiment Analysis of Amazon Product Reviews",
+        "excerpt":"A classification of text-based product reviews into POSITIVE and NEGATIVE. Data The data is collected from reviews of various books. A review given by a single user contains some text and a rating on the scale of 1-5. Text associated with 1,2 ratings is considered negative, and those associated with...","categories": [],
+        "tags": ["NLP"],
+        "url": "http://localhost:4000/sentiment-analysis/",
         "teaser":null},{
         "title": "Virtual Paint",
         "excerpt":"Hover a marker in the air in front of the camera to paint on the screen. Why this project Fascinated by the field of computer vision, I sought to learn more about it. I learnt some basics of the library of OpenCV in python. In an effort to apply the...","categories": [],

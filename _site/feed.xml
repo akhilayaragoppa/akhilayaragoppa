@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-01T01:36:54+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>A Data Science Portfolio</subtitle><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><entry><title type="html">Clearing emails from Gmail in bulk</title><link href="http://localhost:4000/apis/deleting-old-emails/" rel="alternate" type="text/html" title="Clearing emails from Gmail in bulk" /><published>2020-07-25T00:00:00+05:30</published><updated>2020-07-25T00:00:00+05:30</updated><id>http://localhost:4000/apis/deleting-old-emails</id><content type="html" xml:base="http://localhost:4000/apis/deleting-old-emails/">&lt;p&gt;A script that uses the Gmail API to delete unwanted emails.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-01T16:39:47+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Akhila Yaragoppa</title><subtitle>A Data Science Portfolio</subtitle><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><entry><title type="html">Clearing emails from Gmail in bulk</title><link href="http://localhost:4000/apis/deleting-old-emails/" rel="alternate" type="text/html" title="Clearing emails from Gmail in bulk" /><published>2020-07-25T00:00:00+05:30</published><updated>2020-07-25T00:00:00+05:30</updated><id>http://localhost:4000/apis/deleting-old-emails</id><content type="html" xml:base="http://localhost:4000/apis/deleting-old-emails/">&lt;p&gt;A script that uses the Gmail API to delete unwanted emails.&lt;/p&gt;
 
 &lt;h2 id=&quot;backstory&quot;&gt;Backstory&lt;/h2&gt;
 
@@ -41,7 +41,66 @@
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/virtualPaint.py&quot;&gt;Here&lt;/a&gt; is the code I wrote.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="OpenCV" /><summary type="html">Hover a marker in the air in front of the camera to paint on the screen.</summary></entry><entry><title type="html">Extracting events from Google Calendar for Data Analysis</title><link href="http://localhost:4000/apis/GoogleCalendarAnalysis/" rel="alternate" type="text/html" title="Extracting events from Google Calendar for Data Analysis" /><published>2020-01-07T00:00:00+05:30</published><updated>2020-01-07T00:00:00+05:30</updated><id>http://localhost:4000/apis/GoogleCalendarAnalysis</id><content type="html" xml:base="http://localhost:4000/apis/GoogleCalendarAnalysis/">&lt;p&gt;An effort to maximize productivity and track the progress.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/virtualPaint.py&quot;&gt;Here&lt;/a&gt; is the code I wrote.&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="OpenCV" /><summary type="html">Hover a marker in the air in front of the camera to paint on the screen.</summary></entry><entry><title type="html">Using TensorFlow to Calculate Decision Boundaries</title><link href="http://localhost:4000/neural-nets-classification/" rel="alternate" type="text/html" title="Using TensorFlow to Calculate Decision Boundaries" /><published>2020-06-23T00:00:00+05:30</published><updated>2020-06-23T00:00:00+05:30</updated><id>http://localhost:4000/neural-nets-classification</id><content type="html" xml:base="http://localhost:4000/neural-nets-classification/">&lt;p&gt;Building neural network models using TensorFlow framework to classify objects belonging to different categories.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/neural-nets/&quot;&gt;Data and Code&lt;/a&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Neural Networks" /><category term="Classification" /><summary type="html">Building neural network models using TensorFlow framework to classify objects belonging to different categories.</summary></entry><entry><title type="html">Sentiment Analysis of Amazon Product Reviews</title><link href="http://localhost:4000/sentiment-analysis/" rel="alternate" type="text/html" title="Sentiment Analysis of Amazon Product Reviews" /><published>2020-06-23T00:00:00+05:30</published><updated>2020-06-23T00:00:00+05:30</updated><id>http://localhost:4000/sentiment-analysis</id><content type="html" xml:base="http://localhost:4000/sentiment-analysis/">&lt;p&gt;A classification of text-based product reviews into POSITIVE and NEGATIVE.&lt;/p&gt;
+
+&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The data is collected from reviews of various books. A review given by a single user contains some text and a rating on the scale of 1-5. Text associated with 1,2 ratings is considered &lt;em&gt;negative&lt;/em&gt;, and those associated with 4,5 is considered &lt;em&gt;positive&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;data-processing&quot;&gt;Data Processing&lt;/h2&gt;
+&lt;p&gt;The text data is converted into numeric vectors so that it can be passed into some classification models. The conversion from text to numerical vectors is done using ‘Bag of Words’.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-bag-of-words&quot;&gt;What is Bag of Words?&lt;/h2&gt;
+&lt;p&gt;Bag of words simply keeps track of all the words occurring and their corresponding frequency of occurrence. Every distinct word occurring in the entire training data is assigned an index. Then a vector is formed where each entry in the vector is the number of times the word at that index occurred.&lt;/p&gt;
+
+&lt;h2 id=&quot;classification&quot;&gt;Classification&lt;/h2&gt;
+&lt;p&gt;The transformed vectors are fit using multiple classification models namely SVM, Decision Trees, Naive Bayes and Logistic Regression.&lt;/p&gt;
+
+&lt;h2 id=&quot;prediction&quot;&gt;Prediction&lt;/h2&gt;
+&lt;p&gt;This trained model is able to predict the sentiment of a new unseen text.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;Here is the &lt;a href=&quot;https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/sentiment-analysis.ipynb&quot;&gt;jupyter notebook&lt;/a&gt; where I implemented the above technique.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-bag-of-words-fails&quot;&gt;Where ‘Bag of Words’ fails?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;When an unseen word that was not present in the training data is given to the model for prediction, it simple ignores that word. This word could potentially change the tone of the review, but is ignored if the machine has not seen it before.&lt;/li&gt;
+  &lt;li&gt;It does not understand contextual meaning. It does not take into consideration the meaning of a word in combination with the words adjoining a given tone indicating word.
+    &lt;ul&gt;
+      &lt;li&gt;Ex: ‘This book was not good’ and ‘Not only was this book good, it was excellent.’ These two sentences seem similar to this model.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;It cannot comprehend that two same words can have slightly differing spellings.
+    &lt;ul&gt;
+      &lt;li&gt;Ex: ‘book’ and ‘books’ are two different words to this algorithm.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-good-about-bag-of-words-then&quot;&gt;What is good about ‘Bag of Words’ then?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The number of features generated by the model is much less compared to other state of the art techniques. This allows for use of simple classification models and quick computation.&lt;/li&gt;
+  &lt;li&gt;It is a very intuitive algorithm.
+    &lt;ul&gt;
+      &lt;li&gt;As the complexity of algorithms in the machine learning field is increasing everyday, it can be very important to have simpler algorithms that can provide intuitive understanding for beginners, and motivate them to contribute in making the complex algorithms more intuitive.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-are-other-state-of-the-art-techniques-that-can-solve-the-same-problem&quot;&gt;What are other state of the art techniques that can solve the same problem?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Word2Vec
+    &lt;ul&gt;
+      &lt;li&gt;This is an algorithm that can be used to convert words to vectors.&lt;/li&gt;
+      &lt;li&gt;It solves most issues in bag of words technique, such as: contextual understanding, understanding unseen words from training model.&lt;/li&gt;
+      &lt;li&gt;NLTK library provides excellent support for performing this technique.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;GPT-2&lt;/li&gt;
+  &lt;li&gt;GPT-3&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="NLP" /><summary type="html">A classification of text-based product reviews into POSITIVE and NEGATIVE.</summary></entry><entry><title type="html">Extracting events from Google Calendar for Data Analysis</title><link href="http://localhost:4000/apis/GoogleCalendarAnalysis/" rel="alternate" type="text/html" title="Extracting events from Google Calendar for Data Analysis" /><published>2020-01-07T00:00:00+05:30</published><updated>2020-01-07T00:00:00+05:30</updated><id>http://localhost:4000/apis/GoogleCalendarAnalysis</id><content type="html" xml:base="http://localhost:4000/apis/GoogleCalendarAnalysis/">&lt;p&gt;An effort to maximize productivity and track the progress.&lt;/p&gt;
 
 &lt;p&gt;I wrote a python script to extract events from my google calendar using the
 Google Calendar API.&lt;/p&gt;
@@ -287,7 +346,7 @@ Titanic arrived in Queenstown, Ireland a day later.&lt;br /&gt;
 &lt;h3 id=&quot;varying-the-number-of-iterations-for-better-performance&quot;&gt;Varying the number of iterations for better performance&lt;/h3&gt;
 &lt;p&gt;At the 37th iteration, I obtained the best validation performance.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/feedback/validation.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Neural Networks" /><category term="MATLAB" /><summary type="html">An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.</summary></entry><entry><title type="html">Classification of Songs - Million Song Dataset</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - Million Song Dataset" /><published>2015-09-15T00:00:00+05:30</published><updated>2015-09-15T00:00:00+05:30</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;p&gt;An analysis of the properties of a song to identify the decade to which the song belonged.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/feedback/validation.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Neural Networks" /><summary type="html">An analysis of course feedback forms to predict the instructor, students attendance and number of repeats for that course.</summary></entry><entry><title type="html">Classification of Songs - Million Song Dataset</title><link href="http://localhost:4000/million-song-dataset/" rel="alternate" type="text/html" title="Classification of Songs - Million Song Dataset" /><published>2015-09-15T00:00:00+05:30</published><updated>2015-09-15T00:00:00+05:30</updated><id>http://localhost:4000/million-song-dataset</id><content type="html" xml:base="http://localhost:4000/million-song-dataset/">&lt;p&gt;An analysis of the properties of a song to identify the decade to which the song belonged.&lt;/p&gt;
 
 &lt;h2 id=&quot;dataset&quot;&gt;Dataset&lt;/h2&gt;
 
@@ -370,4 +429,4 @@ This lead to a conclusion that the dataset has the &lt;strong&gt;curse of dimesi
 &lt;span class=&quot;n&quot;&gt;test_op1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lowrep_testingData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_op1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_class_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;acuracy1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Classification" /><category term="MATLAB" /><summary type="html">An analysis of the properties of a song to identify the decade to which the song belonged.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Akhila Yaragoppa</name><email>akhila171@gmail.com</email></author><category term="Classification" /><summary type="html">An analysis of the properties of a song to identify the decade to which the song belonged.</summary></entry></feed>

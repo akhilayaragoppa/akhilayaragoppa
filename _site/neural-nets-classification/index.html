@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Extracting events from Google Calendar for Data Analysis - Akhila Yaragoppa</title>
-<meta name="description" content="An effort to maximize productivity and track the progress.">
+<!-- begin _includes/seo.html --><title>Using TensorFlow to Calculate Decision Boundaries - Akhila Yaragoppa</title>
+<meta name="description" content="Building neural network models using TensorFlow framework to classify objects belonging to different categories.">
 
 
   <meta name="author" content="Akhila Yaragoppa">
@@ -19,32 +19,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Akhila Yaragoppa">
-<meta property="og:title" content="Extracting events from Google Calendar for Data Analysis">
-<meta property="og:url" content="http://localhost:4000/apis/GoogleCalendarAnalysis/">
+<meta property="og:title" content="Using TensorFlow to Calculate Decision Boundaries">
+<meta property="og:url" content="http://localhost:4000/neural-nets-classification/">
 
 
-  <meta property="og:description" content="An effort to maximize productivity and track the progress.">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/images/abs.jpg">
+  <meta property="og:description" content="Building neural network models using TensorFlow framework to classify objects belonging to different categories.">
 
 
 
-
-
-  <meta property="article:published_time" content="2020-01-07T00:00:00+05:30">
+  <meta property="og:image" content="http://localhost:4000/images/ds.jpg">
 
 
 
 
 
-  
+  <meta property="article:published_time" content="2020-06-23T00:00:00+05:30">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/apis/GoogleCalendarAnalysis/">
+
+<link rel="canonical" href="http://localhost:4000/neural-nets-classification/">
 
 
 
@@ -167,7 +167,7 @@
   style=" "
 >
   
-    <img src="/images/abs.jpg" alt="Extracting events from Google Calendar for Data Analysis" class="page__hero-image">
+    <img src="/images/ds.jpg" alt="Using TensorFlow to Calculate Decision Boundaries" class="page__hero-image">
   
   
 </div>
@@ -302,15 +302,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Extracting events from Google Calendar for Data Analysis">
-    <meta itemprop="description" content="An effort to maximize productivity and track the progress.">
-    <meta itemprop="datePublished" content="January 07, 2020">
+    <meta itemprop="headline" content="Using TensorFlow to Calculate Decision Boundaries">
+    <meta itemprop="description" content="Building neural network models using TensorFlow framework to classify objects belonging to different categories.">
+    <meta itemprop="datePublished" content="June 23, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Extracting events from Google Calendar for Data Analysis
+          <h1 id="page-title" class="page__title" itemprop="headline">Using TensorFlow to Calculate Decision Boundaries
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -318,7 +318,7 @@
 
 
 
-  2 minute read
+  less than 1 minute read
 
 </p>
           
@@ -327,82 +327,10 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>An effort to maximize productivity and track the progress.</p>
+        <p>Building neural network models using TensorFlow framework to classify objects belonging to different categories.</p>
 
-<p>I wrote a python script to extract events from my google calendar using the
-Google Calendar API.</p>
-<ul>
-  <li>Inputs: Start date, number of days (n)</li>
-  <li>Output: A csv file with events for n days and related information.
-This can be directly imported as a DataFrame using pandas, for
-further analysis and visualization.</li>
-</ul>
-
-<h1 id="motivation">Motivation</h1>
-
-<p>I am always looking for ways to maximise my productivity. The goal is to
-get done as much as I want to, while being careful not to reach the point of burnout.</p>
-
-<p>I recently came across this idea of scheduling every minute of your day using a
-calendar. This method worked surprisingly well and helped me very easily achieve
-my daily goals. I have been using the google calendar to track my daily activities.
-It occurred to me that I could track and monitor my progress by visualizing how I
-spent the last few days/weeks.</p>
-
-<h1 id="what-the-code-does">What the code does</h1>
-
-<h2 id="querying-data-from-calendar-api">Querying data from Calendar API</h2>
-<p>Each task I schedule in my day is an event. I first extract the event resources
-by calling the google calendar APIs. Some useful information on how various items
-in the calendar are stored, is provided in the <a href="https://developers.google.com/calendar/concepts">official documentation</a>.</p>
-
-<h2 id="ordering-and-segregating-data">Ordering and segregating data</h2>
-<p>I segregate the events belonging to each day from the start date (configurable).
-For each event I obtain:</p>
-<ul>
-  <li>Name of the event.</li>
-  <li>The category of the event. Each category has a different color assigned to it.</li>
-  <li>The date and time of start of the event.</li>
-  <li>The duration of the event.</li>
-</ul>
-
-<h2 id="saving-data-into-a-csv">Saving data into a csv</h2>
-<p>I create tables with all the above mentioned data. I save these into a csv file.
-The csv file is created such that it can directly be imported into pandas as a DataFrame for further analysis.</p>
-
-<h1 id="calendar-input">Calendar (Input)</h1>
-
-<p>This is what my calendar looked like in the first week.</p>
-
-<p><img src="/images/g-calendar/g-calendar.png" alt="Calendar image" /></p>
-
-<h1 id="extracted-data-output">Extracted Data (Output)</h1>
-
-<p>The extracted data from google calendar has the following columns:</p>
-<ul>
-  <li>Day</li>
-  <li>Event name</li>
-  <li>Start datetime</li>
-  <li>Event duration</li>
-  <li>Category (Color in calendar)</li>
-</ul>
-
-<p>A sample of the extracted data is shown below:
-<img src="/images/g-calendar/g-csv.png" alt="csv image" /></p>
-
-<h1 id="what-to-do-with-the-extracted-csv">What to do with the extracted csv</h1>
-
-<p>After importing the csv into a data frame, I can plot various graphs (histograms, pie charts, etc.)
-indicating the amount of time spent in various activites and monitor how I utilize my time.</p>
-
-<p>I shall be putting up another post with the complete analysis of this data. I will
-probably implement some ideas from habit tracking apps to extract useful
-information and implications of this data.</p>
-
-<h1 id="source-code">Source Code</h1>
-
-<p>The source code for this project is in python. Source code can be found <!---<a href="/source_code/google-calendar.py">here</a>-->
-<a href="https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/google-calendar.py">here</a>.</p>
+<h2 id="code">Code</h2>
+<p><a href="https://github.com/akhilayaragoppa/akhilayaragoppa.github.io/blob/master/source_code/neural-nets/">Data and Code</a></p>
 
         
       </section>
@@ -410,8 +338,6 @@ information and implications of this data.</p>
       <footer class="page__meta">
         
         
-
-
   
 
 
@@ -420,19 +346,25 @@ information and implications of this data.</p>
   
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
       
       
-      <a href="/categories/#apis" class="page__taxonomy-item" rel="tag">APIs</a>
+      <a href="/tags/#classification" class="page__taxonomy-item" rel="tag">Classification</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#neural-networks" class="page__taxonomy-item" rel="tag">Neural Networks</a>
     
     </span>
   </p>
 
 
+
+
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-01-07T00:00:00+05:30">January 07, 2020</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-23T00:00:00+05:30">June 23, 2020</time></p>
         
       </footer>
 
@@ -441,22 +373,22 @@ information and implications of this data.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Extracting+events+from+Google+Calendar+for+Data+Analysis%20http%3A%2F%2Flocalhost%3A4000%2Fapis%2FGoogleCalendarAnalysis%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Using+TensorFlow+to+Calculate+Decision+Boundaries%20http%3A%2F%2Flocalhost%3A4000%2Fneural-nets-classification%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fapis%2FGoogleCalendarAnalysis%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fneural-nets-classification%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fapis%2FGoogleCalendarAnalysis%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fneural-nets-classification%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/titanic/" class="pagination--pager" title="Titanic - An exploratory analysis
+      <a href="/apis/GoogleCalendarAnalysis/" class="pagination--pager" title="Extracting events from Google Calendar for Data Analysis
 ">Previous</a>
     
     
-      <a href="/neural-nets-classification/" class="pagination--pager" title="Using TensorFlow to Calculate Decision Boundaries
+      <a href="/sentiment-analysis/" class="pagination--pager" title="Sentiment Analysis of Amazon Product Reviews
 ">Next</a>
     
   </nav>
