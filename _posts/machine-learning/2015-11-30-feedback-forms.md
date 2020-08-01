@@ -1,7 +1,7 @@
 ---
 title: "An Analysis of Course Feedback Forms"
 date: 2015-11-30
-tags: [Neural Networks, MATLAB]
+tags: [Neural Networks]
 header:
   image: "/images/ds.jpg"
 ---
